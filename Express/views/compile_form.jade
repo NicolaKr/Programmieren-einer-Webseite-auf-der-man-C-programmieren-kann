@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+  h1= title
+
+  form(method='POST' action='/compile/code')
+    div.form-group
+      label(for='code') Programmcode:
+      textarea#code.form-controll(cols="80", rows="20" name='code')
+    button.btn.btn-primary(type='submit') Submit
